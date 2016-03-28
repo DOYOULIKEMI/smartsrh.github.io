@@ -57,7 +57,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://smartshi.github.com"></form>
@@ -143,9 +143,10 @@ netstat -nl | grep 21
 lsmod | grep ip_conntrack_ftp
 lsmod | grep nf_conntrack_ftp
 </code></pre><p>if not exist <code>ip_conntrack_ftp</code> or <code>nf_conntrack_ftp</code></p>
-<pre><code>modprobe ip_conntrack_ftp
+<pre><code class="bash">modprobe ip_conntrack_ftp
 modprobe ip_nat_ftp
-</code></pre><p>then add them to <code>/etc/rc.local</code> to start them as ECS starts.</p>
+</code></pre>
+<p>then add them to <code>/etc/rc.local</code> to start them as ECS starts.</p>
 <pre><code>echo &quot;modprobe ip_conntrack_ftp&quot;&gt;&gt;/etc/rc.local
 echo &quot;modprobe ip_nat_ftp&quot;&gt;&gt;/etc/rc.local
 </code></pre><p>Stop firewall</p>
@@ -155,7 +156,7 @@ service vsftpd restart
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://smartshi.github.com/2016/03/28/CentOS-Notes/" data-id="cimbw5k2i0000f2pipvqd6igg" class="article-share-link">Share</a>
+      <a data-url="http://smartshi.github.com/2016/03/28/CentOS-Notes/" data-id="cimbw8km60000h4pighemhld5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CentOS/">CentOS</a></li></ul>
@@ -202,7 +203,7 @@ service vsftpd restart
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://smartshi.github.com/2016/03/17/hello-world/" data-id="cimbw5k2p0001f2piz0lwlbh3" class="article-share-link">Share</a>
+      <a data-url="http://smartshi.github.com/2016/03/17/hello-world/" data-id="cimbw8kmi0001h4pi9jh9mgao" class="article-share-link">Share</a>
       
       
     </footer>
@@ -241,7 +242,7 @@ service vsftpd restart
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Arkiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
     </div>
@@ -251,7 +252,7 @@ service vsftpd restart
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Siste innlegg</h3>
     <div class="widget">
       <ul>
         
