@@ -36,14 +36,8 @@
 <li><code>cat fileA</code> only read the contents of A</li>
 <li><code>vim fileA</code> read and edit the contents of A</li>
 </ul>
-<h3 id="2-The-Command-of-Mannal"><a href="#2-The-Command-of-Mannal" class="headerlink" title="2. The Command of Mannal"></a>2. The Command of Mannal</h3><h3 id="1-FTP-Server-Configuration"><a href="#1-FTP-Server-Configuration" class="headerlink" title="1. FTP Server Configuration"></a>1. FTP Server Configuration</h3><pre><code>rpm -qa | grep vsftpd
-yum install vsftpd
-vim /etc/vsftpd/vsftpd.conf
-anonymous_enable=NO
-listen=YES
-listen_ipv6=NO
-vim /etc/vsftpd/ftpusers
-</code></pre><p>delete <code>root</code></p>
+<h3 id="2-The-Command-of-Mannal"><a href="#2-The-Command-of-Mannal" class="headerlink" title="2. The Command of Mannal"></a>2. The Command of Mannal</h3><h3 id="1-FTP-Server-Configuration"><a href="#1-FTP-Server-Configuration" class="headerlink" title="1. FTP Server Configuration"></a>1. FTP Server Configuration</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ rpm -qa | grep vsftpd</span><br><span class="line">$ yum install vsftpd</span><br><span class="line">$ vim /etc/vsftpd/vsftpd.conf</span><br><span class="line">$ anonymous_<span class="built_in">enable</span>=NO</span><br><span class="line">$ listen=YES</span><br><span class="line">$ listen_ipv6=NO</span><br><span class="line">$ vim /etc/vsftpd/ftpusers</span><br></pre></td></tr></table></figure>
+<p>delete <code>root</code></p>
 <pre><code>vim /etc/vsftpd/user_list
 </code></pre><p>delete <code>root</code></p>
 <pre><code>service vsftpd start
